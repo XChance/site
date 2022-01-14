@@ -6,7 +6,7 @@ import TextTransition, { presets } from "react-text-transition";
 const useStyles = createUseStyles({
     ptitle: {
       color: "white",
-      fontSize: "8vw",
+      fontSize: "10vw",
       position: "relative",
       letterSpacing: "0.3rem",
       top: "6vh",
@@ -15,15 +15,16 @@ const useStyles = createUseStyles({
     pdesc: {
       color: "white",
       fontSize: "2.2vw",
-      lineHeight: "2",
+      lineHeight: "3",
       position: "relative",
-      top: "5vh",
-      left: "11vw",
+      textAlign: "center",
+      top: "6vh",
+      right: "14vw",
     },
 
     ltitle: {
       color: "white",
-      fontSize: "8vw",
+      fontSize: "10vw",
       position: "relative",
       letterSpacing: "0.3rem",
       top: "6vh",
@@ -34,8 +35,9 @@ const useStyles = createUseStyles({
       fontSize: "2.2vw",
       lineHeight: "2",
       position: "relative",
+      textAlign: "center",
       top: "8vh",
-      left: "16vw",
+      right: "14vw",
     },
 
     mtitle: {
@@ -52,7 +54,7 @@ const useStyles = createUseStyles({
         fontSize: "5vw",
         lineHeight: "2",
         position: "relative",
-        top: "8vh",
+        top: "10vh",
       },
     mlines: {
         marginBottom: "0.5vh",
@@ -90,8 +92,8 @@ export default function Title( {isPortrait, isMobile}: Props ) {
     <text className={isPortrait ? classes.ptitle : classes.ltitle}>xian chance</text>
     <p className={isPortrait ? classes.pdesc : classes.ldesc}>
     {age} year old jamaican software developer based in atlanta<br/>
-    &ensp;fan of web serials, vscode, and anything emergent<br/>
-    &emsp;i like <TextTransition text={ likes[index % likes.length]} springConfig={ presets.stiff } inline={true}/>, too
+    fan of web serials, vscode, and anything emergent<br/>
+    i like <TextTransition text={ likes[index % likes.length]} springConfig={ presets.stiff } inline={true}/>, too
     </p>
     </React.Fragment>
 
