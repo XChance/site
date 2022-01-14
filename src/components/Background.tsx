@@ -12,11 +12,17 @@ const useStyles = createUseStyles({
       overflow: "hidden",
     },
   });
+
+  type Props = {
+    isMobile: boolean,
+  };
   
-  export default function Background(props: any) {
+  export default function Background( { isMobile }: Props ) {
     const classes = useStyles();
     const myRef = useRef<HTMLDivElement>(null);
+    const flockSize = isMobile ? 50 : 100;
     
+
     const sketch = (p: p5) => {
         let flock: Flock;
         //https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs
@@ -24,7 +30,7 @@ const useStyles = createUseStyles({
             p.createCanvas(window.innerWidth, window.innerHeight - 4);
             p.background("grey");
             flock = new Flock();
-            for (let i = 0; i < 100; i++) {
+            for (let i = 0; i < flockSize; i++) {
                 let b = new Boid(p.random(50, p.width), p.random(50, p.height));
                 flock.addBoid(b);
             }
@@ -121,9 +127,9 @@ const useStyles = createUseStyles({
             p.translate(this.position.x, this.position.y);
             p.rotate(theta);
             p.beginShape();
-            p.vertex(0, -this.r * 2);
-            p.vertex(-this.r, this.r * 2);
-            p.vertex(this.r, this.r * 2);
+            p.vertex(0, -this.r * 1);
+            p.vertex(-this.r, this.r * 1.5);
+            p.vertex(this.r, this.r * 1.5);
             p.endShape(p.CLOSE);
             p.pop();
           }
