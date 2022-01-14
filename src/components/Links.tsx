@@ -16,7 +16,7 @@ const useStyles = createUseStyles({
         fontSize: "3vw",
         position: "relative",
         letterSpacing: "0.3 rem",
-        top: "24vh",
+        top: "20vh",
         textAlign: "center",
     },
     mroot: {

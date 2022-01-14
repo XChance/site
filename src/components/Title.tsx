@@ -28,7 +28,7 @@ const useStyles = createUseStyles({
       position: "relative",
       letterSpacing: "0.3rem",
       textAlign: "center",
-      top: "26vh",
+      top: "24vh",
       left: "28vw",
     },
     ldesc: {
@@ -37,7 +37,7 @@ const useStyles = createUseStyles({
       lineHeight: "2",
       position: "relative",
       textAlign: "center",
-      top: "24vh",
+      top: "21vh",
     },
 
     mtitle: {
