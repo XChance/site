@@ -122,14 +122,14 @@ const useStyles = createUseStyles({
             let theta = this.velocity.heading() + p.radians(90);
             p.fill("#151321");
             p.stroke("#d42222");
-            p.strokeWeight(4);
+            p.strokeWeight(2);
             p.push();
             p.translate(this.position.x, this.position.y);
             p.rotate(theta);
             p.beginShape();
-            p.vertex(0, -this.r * 1);
-            p.vertex(-this.r, this.r * 1.5);
-            p.vertex(this.r, this.r * 1.5);
+            p.vertex(0, -this.r * 2);
+            p.vertex(-this.r, this.r * .5);
+            p.vertex(this.r, this.r * .5);
             p.endShape(p.CLOSE);
             p.pop();
           }

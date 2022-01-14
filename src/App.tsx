@@ -9,11 +9,11 @@ const useStyles = createUseStyles({
   root: {
     height: "100vh",
     backgroundColor: "black",
+    overflow: "hidden",
   },
   page: {
     minHeight: "100vh",
     width: "100vw",
-    overflow: "hidden",
     userSelect: "none",
     transition: "all 0.3s ease",
   },

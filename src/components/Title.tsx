@@ -9,35 +9,35 @@ const useStyles = createUseStyles({
       fontSize: "10vw",
       position: "relative",
       letterSpacing: "0.3rem",
-      top: "6vh",
-      left: "8vw",
+      textAlign: "center",
+      top: "30vh",
+      left: "22vw",
     },
     pdesc: {
-      color: "white",
-      fontSize: "2.2vw",
-      lineHeight: "3",
-      position: "relative",
-      textAlign: "center",
-      top: "6vh",
-      right: "14vw",
-    },
-
-    ltitle: {
-      color: "white",
-      fontSize: "10vw",
-      position: "relative",
-      letterSpacing: "0.3rem",
-      top: "6vh",
-      left: "8vw",
-    },
-    ldesc: {
       color: "white",
       fontSize: "2.2vw",
       lineHeight: "2",
       position: "relative",
       textAlign: "center",
-      top: "8vh",
-      right: "14vw",
+      top: "29vh",
+    },
+
+    ltitle: {
+      color: "white",
+      fontSize: "8vw",
+      position: "relative",
+      letterSpacing: "0.3rem",
+      textAlign: "center",
+      top: "26vh",
+      left: "28vw",
+    },
+    ldesc: {
+      color: "white",
+      fontSize: "1.8vw",
+      lineHeight: "2",
+      position: "relative",
+      textAlign: "center",
+      top: "24vh",
     },
 
     mtitle: {
@@ -83,7 +83,7 @@ export default function Title( {isPortrait, isMobile}: Props ) {
   useEffect(() => {
     const intervalId = setInterval(() =>
       setIndex(index => index + 1),
-      3777
+      3500
     );
     return () => clearTimeout(intervalId);
   });
