@@ -26,7 +26,7 @@ const useStyles = createUseStyles({
         position: "relative",
         letterSpacing: "0.3 rem",
         top: "30vh",
-        left: "18vw",
+        left: "22vw",
     },
     link: {
         padding: "1vw",
