@@ -134,7 +134,7 @@ const useStyles = createUseStyles({
             p.pop();
 
             p.fill(0, 0, 0, 0);
-            p.strokeWeight(2);
+            p.strokeWeight(1);
             p.ellipse(p.mouseX, p.mouseY, 100, 100);
           }
           
