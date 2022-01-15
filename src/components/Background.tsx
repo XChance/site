@@ -132,6 +132,10 @@ const useStyles = createUseStyles({
             p.vertex(this.r, this.r * .5);
             p.endShape(p.CLOSE);
             p.pop();
+
+            p.fill(0, 0, 0, 0);
+            p.strokeWeight(2);
+            p.ellipse(p.mouseX, p.mouseY, 100, 100);
           }
           
           // Wraparound
