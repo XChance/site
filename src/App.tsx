@@ -9,8 +9,6 @@ const useStyles = createUseStyles({
   root: {
     height: "100vh",
     backgroundColor: "black",
-    position: "relative",
-    overflowX: "hidden",
     overflow: "hidden",
   },
   page: {
