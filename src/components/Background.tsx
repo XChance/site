@@ -36,6 +36,7 @@ const useStyles = createUseStyles({
         };
    
         p.draw = () => {
+          if(document.visibilityState === "hidden") return;
             p.resizeCanvas(window.innerWidth, window.innerHeight - 4);
             p.background("#151321");
             flock.run();
@@ -240,9 +241,7 @@ const useStyles = createUseStyles({
     };
 
     useEffect(() => {
-      if(document.visibilityState === "visible"){
-        new p5(sketch, myRef.current as HTMLElement);
-      }
+      new p5(sketch, myRef.current as HTMLElement);
     });
 
     return (
