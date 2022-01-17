@@ -1,4 +1,3 @@
-import React from "react";
 import { createUseStyles } from "react-jss";
 import { AiFillGithub, AiFillTwitterCircle, AiOutlineMail } from 'react-icons/ai';
 

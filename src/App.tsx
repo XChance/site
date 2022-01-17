@@ -1,4 +1,3 @@
-import React from 'react';
 import {createUseStyles} from 'react-jss'
 import { useMediaQuery } from 'react-responsive';
 import Background from './components/Background'

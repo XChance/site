@@ -1,4 +1,3 @@
-import React from "react"; 
 import p5 from "p5";
 import {createUseStyles} from 'react-jss'
 import { useRef } from "react";
@@ -16,7 +15,7 @@ const useStyles = createUseStyles({
   type Props = {
     isMobile: boolean,
   };
-  
+
   export default function Background( { isMobile }: Props ) {
     const classes = useStyles();
     const myRef = useRef<HTMLDivElement>(null);
@@ -241,7 +240,9 @@ const useStyles = createUseStyles({
     };
 
     useEffect(() => {
+      if(document.visibilityState === "visible"){
         new p5(sketch, myRef.current as HTMLElement);
+      }
     });
 
     return (
