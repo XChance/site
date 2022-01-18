@@ -133,9 +133,9 @@ const useStyles = createUseStyles({
             p.endShape(p.CLOSE);
             p.pop();
 
-            p.fill(0, 0, 0, 0);
-            p.strokeWeight(1);
-            p.ellipse(p.mouseX, p.mouseY, 100, 100);
+            // p.fill(0, 0, 0, 0);
+            // p.strokeWeight(1);
+            // p.ellipse(p.mouseX, p.mouseY, 100, 100);
           }
           
           // Wraparound
