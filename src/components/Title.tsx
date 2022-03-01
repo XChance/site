@@ -68,8 +68,8 @@ const useStyles = createUseStyles({
 
 export default function Title( {isPortrait, isMobile}: Props ) {
   const classes = useStyles();
-  let dob = new Date('August 12, 2000 02:43:00').getTime();
-  const age = ((Date.now() - dob) / (60*60*24*1000) /365).toFixed(0);
+  let dob = new Date('08/12/2000').getTime();
+  const age = Math.trunc((Date.now() - dob) / (60*60*24*1000) /365);
   const [index, setIndex] = useState(0);
   const likes = [
     "making (and playing) games",
