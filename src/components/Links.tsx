@@ -50,13 +50,13 @@ export default function Links( {isPortrait, isMobile}: Props ){
     const pc = <div className={isPortrait ? classes.proot : classes.lroot}>
         <a href="https://github.com/XChance" className={classes.link}><AiFillGithub/></a>
         <a href="https://twitter.com/yancebert" className={classes.link}><AiFillTwitterCircle/></a>
-        <a href="mailto: chance.saulter@gmail.com" className={classes.link}><AiOutlineMail/></a>
+        <a href="mailto: chance@xchance.dev" className={classes.link}><AiOutlineMail/></a>
     </div>;
 
     const mobile = <div className={classes.mroot}>
         <a href="https://github.com/XChance" className={classes.link}><AiFillGithub/></a>
         <a href="https://twitter.com/yancebert" className={classes.link}><AiFillTwitterCircle/></a>
-        <a href="mailto: chance.saulter@gmail.com" className={classes.link}><AiOutlineMail/></a>
+        <a href="mailto: chance@xchance.dev" className={classes.link}><AiOutlineMail/></a>
     </div>;
 
     return(
